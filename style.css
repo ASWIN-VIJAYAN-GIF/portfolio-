@@ -1,0 +1,114 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* HEADER / HERO BANNER */
+header {
+  position: relative;
+  height: 400px;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(to right, #1a1a1a, #333);
+}
+
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  min-height: 2rem;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 2rem;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffcc00;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+h2 {
+  color: #1a1a1a;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* SKILL BARS */
+.skill {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  width: 0;
+  transition: width 1.5s ease;
+}
+
+/* PROJECTS */
+.project {
+  perspective:
